@@ -109,11 +109,17 @@ const FloatingImage = () => {
             Eager to explore new technologies and deepen my understanding of the ever-evolving tech landscape. I strive to expand my knowledge through hands-on projects, continuous learning, and staying updated with the latest industry trends.
             </p>
 
+            <a
+               href="https://www.linkedin.com/posts/richa-nitin-sapre-653383211_a-series-of-great-opportunities-disguised-activity-7305860891881738240-2bZT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWgU98BQSe9tipoNYpFWo8ETk1WcnWOkoo"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
             <Button
               id="realm-btn"
               title="VIEW BLOG"
               containerClass="mt-5"
             />
+            </a>
           </div>
         </div>
       </div>
