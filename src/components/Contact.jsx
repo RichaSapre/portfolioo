@@ -40,9 +40,11 @@ const Contact = () => {
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
          
-          <Button 
-          onClick={() => window.location.href = 'mailto:hannahsapre29@gmail.com'}
-          title="contact" containerClass="mt-10 cursor-pointer" />
+         <Button 
+         title="Contact" 
+         containerClass="mt-10 cursor-pointer" 
+        onClick={() => window.location.href = 'mailto:hannahsapre29@gmail.com'} 
+         />
         </div>
       </div>
     </div>
