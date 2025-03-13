@@ -154,12 +154,18 @@ const Hero = () => {
               <br />Here, Code Meets Creativity
             </p>
 
+            <a
+               href="https://www.linkedin.com/in/richa-nitin-sapre-653383211"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
             <Button
-              id="watch-trailer"
-              title="Watch trailer"
+              id="LinkedIn"
+              title="LinkedIn"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
+              containerClass="bg-white-300 flex-center gap-1"
             />
+            </a>
           </div>
         </div>
       </div>
