@@ -39,8 +39,10 @@ const Contact = () => {
             title="let&#39;s c<b>o</b>nnect coll<b>a</b>borate <br /> and <br /> cre<b>a</b>te s<b>o</b>mething Amazing."
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
-
-          <Button title="contact" containerClass="mt-10 cursor-pointer" />
+         
+          <Button 
+          onClick={() => window.location.href = 'mailto:hannahsapre29@gmail.com'}
+          title="contact" containerClass="mt-10 cursor-pointer" />
         </div>
       </div>
     </div>
