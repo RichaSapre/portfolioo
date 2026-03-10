@@ -61,8 +61,6 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 // Slideshow Card Component
 const slideshowItems = [
   "videos/projects.mp4",
-  "img/sfb.png",
-  "img/milestone.png",
 ];
 
 const SlideshowCard = () => {
