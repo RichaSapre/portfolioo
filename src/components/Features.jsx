@@ -76,7 +76,7 @@ const SlideshowCard = () => {
 
   return (
     <a 
-      href="https://github.com/RichaSapre/portfolioo" 
+      href="https://github.com/RichaSapre" 
       target="_blank" 
       rel="noopener noreferrer"
       className="block"
@@ -111,7 +111,7 @@ const SlideshowCard = () => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  <section id="tech-stack" className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">More About Me</p>
