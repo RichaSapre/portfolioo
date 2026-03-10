@@ -41,7 +41,7 @@ const About = () => {
         <div className="about-subtext">
           <p>Hey, Richa this side, Pleased to meet you!</p>
           <p className="text-gray-500">
-            Here I am CICD'ing my way through this industry. <b>C</b>ontinuously <b>I</b>ntegrating new tech and <b>C</b>ontinuously <b>D</b>eploying it through my work!
+            Here I am CICD&apos;ing my way through this industry. <b>C</b>ontinuously <b>I</b>ntegrating new tech and <b>C</b>ontinuously <b>D</b>eploying it through my work!
           </p>
         </div>
       </div>

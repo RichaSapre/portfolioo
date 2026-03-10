@@ -38,7 +38,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ src, title, description }) => {
   return (
     <div className="relative size-full">
       <video
@@ -81,7 +81,7 @@ const SlideshowCard = () => {
       rel="noopener noreferrer"
       className="block"
     >
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh] cursor-pointer">
+      <BentoTilt className="relative mb-7 h-96 w-full cursor-pointer overflow-hidden rounded-md border-hsla md:h-[65vh]">
         <div className="relative size-full">
           {slideshowItems[currentIndex].endsWith(".mp4") ? (
             <video
@@ -116,9 +116,9 @@ const Features = () => (
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">More About Me</p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          I'm pursuing an MS in Computer Science at Cal State East Bay, specializing in Software Engineering. 
-          Previously, I earned my Bachelor’s of Engineering in IT from the University of Mumbai. Currently, I’m 
-          working as a Student Assistant at CSUEB’s Career Empowerment Center, enhancing digital resources.
+          I&apos;m pursuing an MS in Computer Science at Cal State East Bay, specializing in Software Engineering. 
+          Previously, I earned my Bachelor&apos;s of Engineering in IT from the University of Mumbai. Currently, I&apos;m 
+          working as a Student Assistant at CSUEB&apos;s Career Empowerment Center, enhancing digital resources.
         </p>
       </div>
 
@@ -127,7 +127,6 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title="Full Stack"
           description="Skilled in React.js, Node.js, and Next.js for building web applications."
-          isComingSoon
         />
       </BentoTilt>
 
@@ -137,8 +136,7 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title="DevOps & Cloud"
             description="Experience with Docker, Kubernetes, AWS, and CI/CD pipelines for automation and deployment."
-            isComingSoon
-          />
+            />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
@@ -146,8 +144,7 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title="UI/UX"
             description="Knowledge of Tailwind CSS, Figma, and performance optimization for seamless user experiences."
-            isComingSoon
-          />
+            />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
@@ -155,8 +152,7 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title="WordPress"
             description="Proficient in custom themes, plugins, Elementor, and optimizing WordPress sites for performance."
-            isComingSoon
-          />
+            />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
