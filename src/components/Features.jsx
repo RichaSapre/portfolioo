@@ -70,42 +70,45 @@ const SlideshowCard = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // Start fading out
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % slideshowItems.length);
-        setFade(true); // Fade in the next slide
-      }, 500); // Fade duration (adjust for smoother transition)
-    }, 4000); // Change slide every 4 seconds
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slideshowItems.length);
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-      <div className="relative size-full">
-        {slideshowItems[currentIndex].endsWith(".mp4") ? (
-          <video
-            src={slideshowItems[currentIndex]}
-            loop
-            muted
-            autoPlay
-            className="absolute left-0 top-0 size-full object-cover"
-          />
-        ) : (
-          <img
-            src={slideshowItems[currentIndex]}
-            alt="Slideshow"
-            className="absolute left-0 top-0 size-full object-cover"
-          />
-        )}
-      </div>
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
-        <h1 className="bento-title special-font">Dynamic Showcase</h1>
-        <p className="text-xs md:text-base">
-          A collection of my work in action, from development to design.
-        </p>
-      </div>
-    </BentoTilt>
+    <a 
+      href="https://github.com/RichaSapre/portfolioo" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh] cursor-pointer">
+        <div className="relative size-full">
+          {slideshowItems[currentIndex].endsWith(".mp4") ? (
+            <video
+              src={slideshowItems[currentIndex]}
+              loop
+              muted
+              autoPlay
+              className="absolute left-0 top-0 size-full object-cover"
+            />
+          ) : (
+            <img
+              src={slideshowItems[currentIndex]}
+              alt="Slideshow"
+              className="absolute left-0 top-0 size-full object-cover"
+            />
+          )}
+        </div>
+        <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
+          <h1 className="bento-title special-font">Projects</h1>
+          <p className="text-xs md:text-base">
+            A collection of my work in action, from development to design.
+          </p>
+        </div>
+      </BentoTilt>
+    </a>
   );
 };
 
@@ -161,7 +164,7 @@ const Features = () => (
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
-              Projects coming soon.
+              More coming soon.
             </h1>
             <TiLocationArrow className="m-5 scale-[5] self-end" />
           </div>
